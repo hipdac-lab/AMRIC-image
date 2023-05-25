@@ -8,22 +8,22 @@ Memory: >= 16 GB RAM
 
 Processor: >= 8 cores
 
-### Step 1 Install Singularity
+### Step 1: Install Singularity
 Install Singularity at https://singularity-tutorial.github.io/01-installation/.
 
-### Step 2 Download the pre-built Singularity image file
+### Step 2: Download the pre-built Singularity image file
 Press Enter after finishing.
 ```
 sudo pip3 install gdown
 gdown https://drive.google.com/uc?id=14v_xUmET-HvCFO3LqmD4sNJL65jBcd0L&export=download
 ```
-### Step 3 Build and run the image file (need root privilege)
+### Step 3: Build and run the image file (need root privilege)
 ```
 sudo singularity build --sandbox artiAmr amric.sif
 sudo singularity shell --writable artiAmr
 ```
 
-### Step 4 Set up environmental variables
+### Step 4: Set up environmental variables
 ```
 export OMPI_DIR=/opt/ompi 
 export OMPI_VERSION=4.1.1
@@ -36,40 +36,40 @@ export OMPI_ALLOW_RUN_AS_ROOT=1
 export OMPI_ALLOW_RUN_AS_ROOT_CONFIRM=1
 ```
 
-### Step 5 Run WarpX simulation with no compression, AMReX's original compression, and AMRIC
+### Step 5: Run WarpX simulation with no compression, AMReX's original compression, and AMRIC
 ```
 cd /home/wpx256/
 . bash.sh
 ```
 
-### Step 6 Run NYX simulation with no compression, AMReX's original compression, and AMRIC
+### Step 6: Run NYX simulation with no compression, AMReX's original compression, and AMRIC
 ```
 cd /home/nyx128/
 . bash.sh
 ```
 
-### Step 7 Evaluate WarpX's data quality and compression ratio for original AMReX compression and our AMRIC
+### Step 7: Evaluate WarpX's data quality and compression ratio for original AMReX compression and our AMRIC
 ```
 cd /home/wpx256/diags/
 . decomp.sh > temp.txt
 . qualityCR.sh
 ```
 
-### Step 8 Evaluate NYX's data quality and compression ratio for original AMReX compression and our AMRIC
+### Step 8: Evaluate NYX's data quality and compression ratio for original AMReX compression and our AMRIC
 ```
 cd /home/nyx128/run/
 . decomp.sh > temp.txt
 . qualityCR.sh
 ```
 
-### Step 9 Compare I/O performance between baselines (i.e., no compression and ori AMReX compression) and AMRIC in WarpX
-```
+**Step 9: Compare I/O performance between baselines (i.e., no compression and ori AMReX compression) and AMRIC in WarpX
+**```
 cd /home/wpx256/otfile/
 . io.sh
 ```
 
-### Step 10 Compare I/O performance between baselines (i.e., no compression and ori AMReX compression) and AMRIC in NYX
-```
+**Step 10: Compare I/O performance between baselines (i.e., no compression and ori AMReX compression) and AMRIC in NYX
+**```
 cd /home/nyx128/otfile/
 . io.sh
 ```
