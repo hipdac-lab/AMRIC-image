@@ -62,7 +62,7 @@ cd /home/nyx128/run/
 . qualityCR.sh
 ```
 
-### step 9: Compare I/O perf between baselines (i.e., no compression and ori AMReX compression) and AMRIC in WarpX
+### Step 9: Compare I/O perf for baselines (i.e., no compression and ori AMReX compression) and AMRIC in WarpX
 
 ```
 cd /home/wpx256/otfile/
