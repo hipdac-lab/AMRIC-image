@@ -3,7 +3,9 @@ The entire workflow takes approximately 12 minutes to execute, including downloa
 
 ### Minimum system requirements
 OS: Ubuntu (20.04 is recommended)
+
 Memory: >= 16 GB RAM
+
 Processor: >= 8 cores
 
 ### Step 1 Install Singularity
