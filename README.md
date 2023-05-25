@@ -63,7 +63,7 @@ cd /home/nyx128/run/
 ```
 
 **Step 9: Compare I/O performance between baselines (i.e., no compression and ori AMReX compression) and AMRIC in WarpX
-**```
+```
 cd /home/wpx256/otfile/
 . io.sh
 ```
