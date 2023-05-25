@@ -9,7 +9,7 @@ Memory: >= 16 GB RAM
 Processor: >= 8 cores
 
 ### Step 1: Install Singularity
-Install Singularity at https://singularity-tutorial.github.io/01-installation/.
+Install [Singularity](https://singularity-tutorial.github.io/01-installation/)
 
 ### Step 2: Download the pre-built Singularity image file
 Press Enter after finishing.
